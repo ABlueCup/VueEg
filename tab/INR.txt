@@ -1,0 +1,30 @@
+
+1, TAB 要知道 PANE 的LABEL 和 NAME, 
+	通过$CHILDREN获取所有的PANE
+	
+2, TAB 要设置选中的选项卡的样式 :CLASS,  CURRENT-VALUE 初始值设为0,可通过选项卡点击和用户自己设置, 根据这个值修改选项卡的样式和被选中的PANE的样式
+TAB要监测CURRENT-VALUE的变化,然后执行以下操作
+UPDATENAV()
+
+UPDATEPANE(); 通过$CHILDREN控制 NAME === CURRENT-VALUE 显示
+
+
+3, PANE 中 LABEL 和 NAME 可以由用户设置,所以是通过PROPS传递进来的,LABEL值是必须的,NAME值可以没有,因为我们会自己给它设置, LABEL和NAME发生变化的时候,TAB要有变化
+
+UPDATE-VALUE = THIS.$PARENT.UPDATE-VALUE()；
+
+初始化完成的时候 MOUNTED()函数内要调用 UPDATE-VALUE方法(这样会不会调用三次,重复了两次) ,此处不能在PANE中执行,应该在父组件TAB中执行,防止重复执行的事情发生. 
+
+设置 CURRENT-VALUE 让它匹配被选中的项 初始 CURRENT-VALUE = 0, 
+
+
+三个VUE实例
+
+#APP 提供CURRENT-VALUE 内容 标题, 插入到PANE的SLOT内
+TAB
+PANE
+
+
+可以从外部关闭的下拉菜单
+点击显示下拉菜单
+下拉菜单的内容

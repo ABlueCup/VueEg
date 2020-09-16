@@ -73,3 +73,6 @@ new Vue({
         value: 6
     }
 });
+
+
+// number k

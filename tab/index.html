@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>tab</title>
+</head>
+<body>
+    
+    <div id="tabApp" v-cloak>
+        <tab v-model="activeKey">
+            <pane label="news" name="news">Trump is US president.</pane>
+            <pane label="music" name="music">JJ is a singer.</pane>
+            <pane label="sport" name="sport">Jame is out.</pane>
+            <pane label="reading" name="reading">I like reading.</pane>
+        </tab>
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="./js/paneComponent.js"></script>
+    <script src="./js/tabComponent.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

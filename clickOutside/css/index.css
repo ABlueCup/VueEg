@@ -1,0 +1,44 @@
+v-cloak{
+    display: none;
+}
+.main{
+    width: 600px;
+    height: 60px;
+    background-color: #eee;
+}
+.main button{
+    position: relative;
+    top: 9px;
+    left: 199px;
+    width: 200px;
+    height: 40px;
+    border:1px solid #999;
+    cursor: pointer;
+}
+.main .menu{
+    z-index: 999;
+    position: relative;
+    top: 30px;
+    left: 199px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: palegreen;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 0 5px #999;
+    /* padding: 20px; */
+}
+.main .menu::before{
+    box-sizing: content-box;
+    position: absolute;
+    top: -40px;
+    left: 85px;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-width: 20px 6px 20px 20px;
+    border-color: transparent transparent palegreen transparent;
+    border-style: solid;
+}

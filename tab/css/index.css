@@ -1,0 +1,46 @@
+v-cloak{
+    display: none;
+}
+
+#tabApp{
+    margin: 20px auto;
+    width: 600px;
+    height: 400px;
+    border: 1px solid gray;
+    box-shadow: 0 0 2px #999;
+}
+#tabApp .tabs{
+    margin:40px 20px 0 20px;
+    background:#eee;
+}
+#tabApp .tabs .tab{
+    height: 30px;
+}
+#tabApp .tabs .tab ul{
+    list-style: none;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+#tabApp .tabs .tab ul li{
+    box-sizing: border-box;
+    display: inline-block;
+    padding:0;
+    margin:0;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#tabApp .tabs .tab ul li.tab-active{
+    background-color:#999;
+    box-shadow: 2px 2px 2px #eee;
+    color:#eee;
+}
+#tabApp .tabs .tab-content{
+    box-sizing: border-box;
+    padding:10px;
+    height: 330px;
+}

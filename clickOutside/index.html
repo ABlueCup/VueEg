@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>可以从外部关闭的下拉菜单</title>
+</head>
+
+<body>
+    <div id="app" class="main" v-cloak v-clickoutside.esc="changeMenu">
+        <button @click="show=!show">点击显示下拉菜单</button>
+        <div class="menu" v-show="show">
+            下拉菜单的内容
+        </div>
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+#timeApp{
+    width: 600px;
+    padding:0;
+    margin:0;
+}
+#timeApp ul{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+#timeApp ul li{
+    line-height: 60px;
+    font-size: 20px;
+    color: peru;
+    text-align: left;
+    border-bottom: 1px dashed gray;
+    text-indent: 2em;
+}
+#timeApp ul li span{
+    color:gray;
+    font-size: 10px;
+}

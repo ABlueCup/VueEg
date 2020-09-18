@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>time</title>
+</head>
+
+<body>
+    <div id="timeApp">
+        <ul>
+            <li v-for="item in news">{{item.title}} <span v-time="item.publishedTime"></span></li>
+
+        </ul>
+        <ul>
+            <li v-for="item in persons" v-birthday="item.birthday">今天是{{item.name}}出生的第W天, 年龄是age</li>
+        </ul>
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/directive.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

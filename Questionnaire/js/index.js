@@ -29,13 +29,19 @@ let vm = new Vue({
     },
     watch: {
         interest() {
+            let len = this.interest.length;
             if (len < 2) {
-                this.reset(2);
+                alert("至少选择两项");
+                this.$nextTick(()=>{
+                    this.reset(2);
+                })
                 return;
             }
             if(len > 3){
-                this.interest.splice(len-1,1);
-                return;
+                alert("最多选三项");
+                this.$nextTick(()=>{
+                    this.interest.splice(len-1,1);
+                });
             }
         },
         introduce() {

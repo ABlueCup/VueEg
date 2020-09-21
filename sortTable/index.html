@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>sort table</title>
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <v-table :columns="columns" :data="information" :width="width"></v-table>
+        <div style="text-align: center;"><button @click="addData">添加数据</button><br><br>
+            <label for="setWidth"> set the column
+                width</label><input type="text" v-model.Number="width"></div>
+
+        <!-- <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄<a>&uarr;</a><a>&darr;</a></th>
+                    <th>出生日期<a>&uarr;</a><a>&darr;</a></th>
+                    <th>地址</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>yan</td>
+                    <td>28</td>
+                    <td>1992-02-01</td>
+                    <td>address</td>
+                </tr>
+                <tr>
+                    <td>brynn</td>
+                    <td>24</td>
+                    <td>1996-02-04</td>
+                    <td>addresses</td>
+                </tr>
+            </tbody>
+        </table> -->
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="./js/tableComponent.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

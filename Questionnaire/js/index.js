@@ -32,9 +32,9 @@ let vm = new Vue({
             let len = this.interest.length;
             if (len < 2) {
                 alert("至少选择两项");
-                this.$nextTick(()=>{
+                // this.$nextTick(()=>{
                     this.reset(2);
-                })
+                // })
                 return;
             }
             if(len > 3){

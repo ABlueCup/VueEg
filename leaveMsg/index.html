@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>leave a message</title>
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <v-input v-model="username"></v-input>
+        <v-textarea v-model="text"></v-textarea>
+        <v-publishbtn @click="handleSend"></v-publishbtn>
+        <v-listmsg :msgs = "list" @delete="delMsg" ></v-listmsg>
+        <!-- <div class="username">
+            <span>昵称:</span>
+            <input type="text">
+        </div>
+        <div class="leave-msg">
+            <span>留言内容:</span><textarea cols="30" rows="6" placeholder="请输入留言内容"></textarea>
+        </div>
+        <div class="publishLeave">
+            <button>发布</button>
+        </div>
+        <div class="listMsg">
+            <div class="singleMsg">
+                <span>小张: </span>
+                <div>
+
+                    <p>推荐阅读 Javascript高级程序设计 , 多练习,阅读别人的代码,要善于思考问题!</p>
+                    <button>回复</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="./js/vInput.js"></script>
+    <script src="./js/vTextarea.js"></script>
+    <script src="./js/btn.js"></script>
+    <script src="./js/listmsg.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

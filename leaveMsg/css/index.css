@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+#app{
+    margin: 20px auto;
+    width: 600px;
+    border: 1px solid gray;
+}
+.username, .leave-msg, .publishLeave, .listMsg{
+    width: 500px;
+    margin:10px auto;
+}
+.username span, .leave-msg span{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    vertical-align: top;
+}
+.username input, .leave-msg textarea{
+    width: 350px;
+    margin-left: 20px;
+    border: 1px solid gray;
+}
+.username input{
+    height: 30px;
+}
+.publishLeave{
+    position: relative;
+    height: 50px;
+}
+.publishLeave button{
+    position: absolute;
+    right: 30px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 6px;
+    background-color:#e93;
+    cursor: pointer;
+}
+.publishLeave button:hover{
+    transform:scale(1.2);
+    transition: all .2s linear 0s;
+    box-shadow: 0 0 5px #999;
+}
+.listMsg .singleMsg {
+    width: 100%;
+    border-bottom:1px dashed #ccc;
+}
+.listMsg .singleMsg span{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    color:#999;
+    text-align: left;
+}
+.listMsg .singleMsg div{
+    position: relative;
+    display: inline-block;
+    width: 440px;
+}
+.listMsg .singleMsg div button{
+    float:right;
+    color:#fff;
+    background-color: #999;
+    padding:5px 10px;
+}
+
